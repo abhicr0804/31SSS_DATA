@@ -15,6 +15,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
+server = app.server
 
 regression_line_temp_vs_density = px.scatter(df, x='Temperature', y='AVG', trendline='ols').data[1]
 
